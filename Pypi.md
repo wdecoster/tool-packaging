@@ -3,6 +3,7 @@
 ## Files required in your project
 
 - See also [PyPA sample project](https://github.com/pypa/sampleproject)
+- See also [Open Sourcing a Python Project the Right Way](https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/)
 - Tutorial [Packaging and Distributing Projects](https://packaging.python.org/distributing/)
 
 ### setup.py
