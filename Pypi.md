@@ -67,10 +67,14 @@ ini file containing option defaults for setup.py
 
 ## test pypi
 python setup.py register -r https://testpypi.python.org/pypi
+```bash
 rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/* -r testpypi
 pip install -i https://testpypi.python.org/pypi <package name>
+```
 
 ## pypi
-rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/*
-pip install NanoPlot
-pip --no-cache-dir install NanoPlot
+```bash
+rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/*  
+pip install NanoPlot  
+pip --no-cache-dir install NanoPlot  
+```
