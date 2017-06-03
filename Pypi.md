@@ -63,3 +63,14 @@ ini file containing option defaults for setup.py
 ### MANIFEST.in
 - in certain cases
 - for inclusion of additional files not automatically included by `setup.py sdist`
+
+
+## test pypi
+python setup.py register -r https://testpypi.python.org/pypi
+rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/* -r testpypi
+pip install -i https://testpypi.python.org/pypi <package name>
+
+## pypi
+rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/*
+pip install NanoPlot
+pip --no-cache-dir install NanoPlot
