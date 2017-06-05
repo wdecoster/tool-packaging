@@ -64,6 +64,12 @@ ini file containing option defaults for setup.py
 - in certain cases
 - for inclusion of additional files not automatically included by `setup.py sdist`
 
+## __init__.py
+Directory needs an __init__.py file containing
+```python
+from .package import *
+```
+
 
 ## test pypi
 python setup.py register -r https://testpypi.python.org/pypi
