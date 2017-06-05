@@ -74,7 +74,8 @@ pip install -i https://testpypi.python.org/pypi <package name>
 
 ## pypi
 ```bash
-rm -r dist/ NanoPlot.egg-info/ ; python setup.py sdist && twine upload dist/*  
+rm -r dist/ *.egg-info/ ; python setup.py sdist && twine upload dist/*  
 pip install NanoPlot  
 pip --no-cache-dir install NanoPlot  
+pip --no-cache-dir install NanoPlot  --upgrade
 ```
