@@ -17,7 +17,16 @@ keyword arguments
 The name which will be used to list your project on Pypi
 - version='1.2.0'  
 See versioning scheme  
-Best is to have this duplicated in both setup.py and code itself
+
+Create a version.py file in your package directory
+for loading the variable in setup.py:
+```python
+exec(open('yourpackage/version.py').read())
+```
+for loading the variable at runtime
+add `from .version import __version__` to your yourpackage/__init__.py
+
+
 - description='description of my project'  
 long_description=long_description  
 long_description can be read from the README  
