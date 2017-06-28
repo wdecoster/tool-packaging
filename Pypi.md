@@ -94,3 +94,9 @@ pip install NanoPlot
 pip --no-cache-dir install NanoPlot  
 pip --no-cache-dir install NanoPlot  --upgrade
 ```
+
+## Testing module without pushing to pypi
+in the project directory, run the following to install the module in **e**ditable mode
+```
+pip install -e .
+```
