@@ -29,11 +29,12 @@ add `from .version import __version__` to your yourpackage/__init__.py
 
 - description='description of my project'  
 long_description=long_description  
-long_description can be read from the README  
+long_description can be read from the README.md using pypandoc
 ```python
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+import pypandoc
+long_description=pypandoc.convert(path.join(here, 'README.md'), 'rst')
 ```
+
 displayed on PyPI together with project
 - url="https://github.com/wdecoster/NanoPlot"  
 Homepage url for project
