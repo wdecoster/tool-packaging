@@ -7,8 +7,9 @@ Filtering and trimming of Oxford Nanopore sequencing data.
   passing filters.
 | Reads from stdin, writes to stdout.
 
-Intended to be used: - directly after fastq extraction - prior to
-mapping - in a stream between extraction and mapping
+| Intended to be used: - directly after fastq extraction
+| - prior to mapping
+| - in a stream between extraction and mapping
 
 | See also `my post about NanoFilt on my blog Gigabase or
   gigabyte <https://gigabaseorgigabyte.wordpress.com/2017/06/05/trimming-and-filtering-oxford-nanopore-sequencing-reads/>`__.
