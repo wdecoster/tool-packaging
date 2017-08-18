@@ -36,7 +36,8 @@ wget -O- https://files.pythonhosted.org/packages/source/n/nanofilt/NanoFilt-1.1.
 `./simulate-travis.py --git-range HEAD --disable-docker`
 
 ### If successful: push, full travis test
+```bash
 git commit -m "updating nanofilt to 1.2.0" recipes/nanofilt/meta.yaml
 git push origin updating-NanoFilt
-
+```
 ### If successful: pull request
