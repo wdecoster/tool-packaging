@@ -24,7 +24,7 @@ for loading the variable in setup.py:
 exec(open('yourpackage/version.py').read())
 ```
 for loading the variable at runtime
-add `from .version import __version__` to your yourpackage/__init__.py
+add `from .version import __version__` to your `yourpackage/__init__.py`
 
 
 - description='description of my project'  
@@ -89,8 +89,16 @@ pip install -i https://testpypi.python.org/pypi <package name>
 ```
 
 ## pypi
+Clean up previous distribution, create a new one distribution, push to pypi.  
+
+For convenience I wrote an bash alias for this
 ```bash
 rm -r dist/ *.egg-info/ ; python setup.py sdist && twine upload dist/*  
+alias pypush='rm -r dist/ *.egg-info/ ; python setup.py sdist && twine upload dist/*'
+```
+
+Installation from Pypi, and upgrade. Might have to ignore the cache if recently upgraded.
+```
 pip install NanoPlot  
 pip --no-cache-dir install NanoPlot  
 pip --no-cache-dir install NanoPlot  --upgrade
